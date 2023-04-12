@@ -1,7 +1,7 @@
 # Web applications in React js
 
 ## online store Caps
-![]([https://files.fm/thumb_show.php?i=ta6wrqcva](https://files.fm/thumb_show.php?i=fjxc56cvn))
+![]([https://files.fm/thumb_show.php?i=fjxc56cvn])
 
 **🌿 branch**: `users`
 
