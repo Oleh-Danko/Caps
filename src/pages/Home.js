@@ -2,6 +2,7 @@ import { CSSTransition } from 'react-transition-group'
 
 import Content from '../components/content/Content'
 import Driwer from '../components/driwer/Driwer'
+import Carousel from '../components/carousel/Carousel'
 
 function Home({cartOpened}) {
 
@@ -14,6 +15,7 @@ function Home({cartOpened}) {
             unmountOnExit>
             <Driwer/>
         </CSSTransition>
+            <Carousel/>
             <Content  />
         </div>
     )
