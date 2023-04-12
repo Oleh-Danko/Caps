@@ -1,96 +1,224 @@
 [
     {
+     "parentId": "1",   
      "id": "1",
      "title": "LA Dodgers 59Fifty Monocamo Infill Fitted Black",
      "price": "34.99",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/New-Era-Atlanta-Braves-59Fifry-Essential-Fitted-Black-front_720x.jpg?v=1635865699"
     },
     {
+     "parentId": "2",   
      "id": "2",
      "title": "LA Dodgers 59Fifty Essential Fitted Grey",
      "price": "34.99",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/New-Era-LA-Dodgers-59Fifty-Essential-Fitted-Grey-front_720x.jpg?v=1635932487"
     },
     {
+     "parentId": "3",   
      "id": "3",
      "title": "Liverpool FC MVP Branson Trucker/Snapback Black ",
      "price": "21.99",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/47-Brand-Liverpool-FC-MVP-Branson-Trucker-Snapback-Black-front_720x.jpg?v=1636133815"
     },
     {
+     "parentId": "4",   
      "id": "4",
      "title": "Trucker Snapback Black/White",
      "price": "12.99",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/Yupoong-Trucker-Snapback-Black-White-front_720x.jpg?v=1637542166"
     },
     {
+     "parentId": "5",   
      "id": "5",
      "title": "NY Yankees MVP Adjustable Dark Maroon",
      "price": "21.99",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/47-Brand-NY-Yankees-MVP-Adjustable-Dark-Maroon-front_720x.jpg?v=1637539251"
     },
     {
+     "parentId": "6",   
      "id": "6",
      "title": "Trucker Snapback Green/White",
      "price": "12.99",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/Yupoong-Trucker-Snapback-Green-White-front_720x.jpg?v=1636570524"
     },
     {
+     "parentId": "7",   
      "id": "7",
      "title": "Trucker 5 Panel Snapback Black",
      "price": "12.99",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/Yupoong-Trucker-5-Panel-Snapback-Black-front_720x.jpg?v=1636015100"
     },
     {
+     "parentId": "8",   
      "id": "8",
      "title": "Boston Red Sox 59Fifty Authentic Fitted Navy",
      "price": "34.99",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/New-Era-Boston-Red-Sox-59Fifty-Authentic-Fitted-Navy-front_720x.jpg?v=1636048186"
     },
     {
+     "parentId": "9",   
      "id": "9",
      "title": "Vili Cap Snapback Black",
      "price": "16.79",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/Ellesse-Vili-Cap-Snapback-Black-front_720x.jpg?v=1636640511"
     },
     {
+     "parentId": "10",   
      "id": "10",
      "title": "Hiking Trucker/Snapback Black/Brown",
      "price": "26.99",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/New-Era-Las-Vegas-Raiders-9Forty-Stretch-Snap-Snapback-Camo-front_720x.jpg?v=1652805425"
     },
     {
+     "parentId": "11",   
      "id": "11",
      "title": "Gasoline Trucker Snapback White/Blue/Red",
      "price": "23.99",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/Mitchell-_-Ness-Boston-Celtics-Melton-Cod-Snapback-Grey-front_720x.jpg?v=1637539132"
     },
     {
+     "parentId": "12",   
      "id": "12",
      "title": "Boston Bruins Laurel Captain Snapback Black",
      "price": "31.99",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/47-Brand-Boston-Bruins-Laurel-Captain-Snapback-Black-front_720x.jpg?v=1665397727"
     },
     {
+     "parentId": "13",   
      "id": "13",
      "title": "LA Dodgers MVP DT Grove Snapback Camo",
      "price": "21.99",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/47-Brand-LA-Dodgers-MVP-DT-Grove-Snapback-Camo-front_720x.jpg?v=1663496812"
     },
     {
+     "parentId": "14",   
      "id": "14",
      "title": "NY Yankees MVP Branson Trucker/Snapback Camo/Black",
      "price": "21.99",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/47-Brand-NY-Yankees-MVP-Branson-Trucker-Snapback-Camo-Black-front_720x.jpg?v=1637095459"
     },
     {
+     "parentId": "15",   
      "id": "15",
      "title": "LA Dodgers MVP Adjustable Royal Blue/White",
-     "price": "17,59",
+     "price": "17.59",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/47-Brand-LA-Dodgers-MVP-Adjustable-Royal-Blue-White-front_720x.jpg?v=1637539001"
     },
     {
+     "parentId": "16",   
      "id": "16",
+     "title": "PIttsburgh Penguins HVIN Captain RT Snapback White/Black",
+     "price": "27.99",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/47-Brand-PIttsburgh-Penguins-HVIN-Captain-RT-Snapback-White-Black-front_720x.jpg?v=1646827763"
+    },
+    {
+     "parentId": "17",   
+     "id": "17",
+     "title": "LA Dodgers 59Fifty Monocamo Infill Fitted Black",
+     "price": "34.99",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/New-Era-Atlanta-Braves-59Fifry-Essential-Fitted-Black-front_720x.jpg?v=1635865699"
+    },
+    {
+     "parentId": "18",   
+     "id": "18",
+     "title": "LA Dodgers 59Fifty Essential Fitted Grey",
+     "price": "34.99",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/New-Era-LA-Dodgers-59Fifty-Essential-Fitted-Grey-front_720x.jpg?v=1635932487"
+    },
+    {
+     "parentId": "19",   
+     "id": "19",
+     "title": "Liverpool FC MVP Branson Trucker/Snapback Black ",
+     "price": "21.99",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/47-Brand-Liverpool-FC-MVP-Branson-Trucker-Snapback-Black-front_720x.jpg?v=1636133815"
+    },
+    {
+     "parentId": "20",   
+     "id": "20",
+     "title": "Trucker Snapback Black/White",
+     "price": "12.99",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/Yupoong-Trucker-Snapback-Black-White-front_720x.jpg?v=1637542166"
+    },
+    {
+     "parentId": "21",   
+     "id": "21",
+     "title": "NY Yankees MVP Adjustable Dark Maroon",
+     "price": "21.99",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/47-Brand-NY-Yankees-MVP-Adjustable-Dark-Maroon-front_720x.jpg?v=1637539251"
+    },
+    {
+     "parentId": "22",   
+     "id": "22",
+     "title": "Trucker Snapback Green/White",
+     "price": "12.99",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/Yupoong-Trucker-Snapback-Green-White-front_720x.jpg?v=1636570524"
+    },
+    {
+     "parentId": "23",   
+     "id": "23",
+     "title": "Trucker 5 Panel Snapback Black",
+     "price": "12.99",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/Yupoong-Trucker-5-Panel-Snapback-Black-front_720x.jpg?v=1636015100"
+    },
+    {
+     "parentId": "24",   
+     "id": "24",
+     "title": "Boston Red Sox 59Fifty Authentic Fitted Navy",
+     "price": "34.99",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/New-Era-Boston-Red-Sox-59Fifty-Authentic-Fitted-Navy-front_720x.jpg?v=1636048186"
+    },
+    {
+     "parentId": "25",   
+     "id": "25",
+     "title": "Vili Cap Snapback Black",
+     "price": "16.79",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/Ellesse-Vili-Cap-Snapback-Black-front_720x.jpg?v=1636640511"
+    },
+    {
+     "parentId": "26",   
+     "id": "26",
+     "title": "Hiking Trucker/Snapback Black/Brown",
+     "price": "26.99",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/New-Era-Las-Vegas-Raiders-9Forty-Stretch-Snap-Snapback-Camo-front_720x.jpg?v=1652805425"
+    },
+    {
+     "parentId": "27",   
+     "id": "27",
+     "title": "Gasoline Trucker Snapback White/Blue/Red",
+     "price": "23.99",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/Mitchell-_-Ness-Boston-Celtics-Melton-Cod-Snapback-Grey-front_720x.jpg?v=1637539132"
+    },
+    {
+     "parentId": "28",   
+     "id": "28",
+     "title": "Boston Bruins Laurel Captain Snapback Black",
+     "price": "31.99",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/47-Brand-Boston-Bruins-Laurel-Captain-Snapback-Black-front_720x.jpg?v=1665397727"
+    },
+    {
+     "parentId": "29",   
+     "id": "29",
+     "title": "LA Dodgers MVP DT Grove Snapback Camo",
+     "price": "21.99",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/47-Brand-LA-Dodgers-MVP-DT-Grove-Snapback-Camo-front_720x.jpg?v=1663496812"
+    },
+    {
+     "parentId": "30",   
+     "id": "30",
+     "title": "NY Yankees MVP Branson Trucker/Snapback Camo/Black",
+     "price": "21.99",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/47-Brand-NY-Yankees-MVP-Branson-Trucker-Snapback-Camo-Black-front_720x.jpg?v=1637095459"
+    },
+    {
+     "parentId": "31",   
+     "id": "31",
+     "title": "LA Dodgers MVP Adjustable Royal Blue/White",
+     "price": "17.59",
+     "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/47-Brand-LA-Dodgers-MVP-Adjustable-Royal-Blue-White-front_720x.jpg?v=1637539001"
+    },
+    {
+     "parentId": "32",   
+     "id": "32",
      "title": "PIttsburgh Penguins HVIN Captain RT Snapback White/Black",
      "price": "27.99",
      "img": "https://cdn.shopify.com/s/files/1/0019/3652/3318/products/47-Brand-PIttsburgh-Penguins-HVIN-Captain-RT-Snapback-White-Black-front_720x.jpg?v=1646827763"

@@ -83,11 +83,10 @@ const Favorites = ({cartOpened}) => {
                 const {id, ...itemprops} = item
                 return (
                     <Cards
-                        data={favorites}
                         key={id}
                         {...itemprops}
                         id={id}
-                        favorited={true}
+                        isFavorit='true'
                     />
                 )
             })}

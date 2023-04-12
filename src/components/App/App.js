@@ -16,7 +16,10 @@ function App() {
     const [isLoading, setIsLoading] = useState(true)
     const [cartOpened, setCartOpened] = useState(false)
     const [itemCart, setItemCart] = useState([])
+    const [activePages, setActivePages] = useState(1)
     const {Provider} = dataContext
+    const page = 4
+    const limit = 8
 
     useEffect(() => {
         // axios.get('https://640f4968cde47f68db46c131.mockapi.io/Caps')  
@@ -33,7 +36,7 @@ function App() {
                 const [cartResponse, favoritesResponse, dataResponse] = await Promise.all([
                     axios.get('https://640f4968cde47f68db46c131.mockapi.io/Cart'), 
                     axios.get('https://642b102500dfa3b54756026c.mockapi.io/favorites'), 
-                    axios.get('https://640f4968cde47f68db46c131.mockapi.io/Caps')
+                    axios.get(`https://640f4968cde47f68db46c131.mockapi.io/Caps?page=${activePages}&limit=${limit}`)
                 ])
 
                 setIsLoading(false)
@@ -46,6 +49,11 @@ function App() {
             }
         })()
     }, [])
+
+    useEffect(() => {
+        axios.get(`https://640f4968cde47f68db46c131.mockapi.io/Caps?page=${activePages}&limit=${limit}`)
+        .then(res => setData(res.data))
+    }, [activePages])
 
     const addItemFromCart = async (obj) => {
         try {
@@ -71,15 +79,48 @@ function App() {
         axios.delete(`https://640f4968cde47f68db46c131.mockapi.io/Cart/${+finditem.id}`)
     }
 
-    const onClickFavorite = (obj) => {
-        if (favorites.find(item => item.id === obj.id)) {
-            axios.delete(`https://642b102500dfa3b54756026c.mockapi.io/favorites/${obj.id}`)
-            setFavorites(prev => prev.filter(item => item.id !== obj.id))      
-        } else {
-            axios.post(`https://642b102500dfa3b54756026c.mockapi.io/favorites`, obj)
-            setFavorites(prev => [...prev, obj])    
-        }
+    const addFaforite = async (obj) => {
+        try {
+            const url = 'https://642b102500dfa3b54756026c.mockapi.io/favorites'
+
+            if (favorites.find(el => +el.parentId === +obj.parentId)) {
+                console.log(obj)
+                console.log(favorites)
+                removeFavorites(obj, url) 
+            } else {
+                console.log(obj)
+                console.log(favorites)
+
+                setFavorites(prev => [...prev, obj]) 
+                const {data} = await  axios.post(url, obj)  
+                setFavorites(prev => prev.map(el => {
+                    if (el.id === obj.id) return {...el, id: data.id}
+                    return el
+                })) 
+            }
+        } catch(err) {console.error(err)}
     }
+
+    const removeFavorites = (obj, url) => { 
+        // console.log(obj)
+        // console.log(favorites)
+
+        const findFavorite = favorites.find(el => +el.parentId === +obj.parentId)
+
+        setFavorites(prev => prev.filter(el => +el.parentId !== +obj.parentId))
+        axios.delete(`${url}/${+findFavorite.id}`)
+    }
+
+    // const onClickFavorite = (obj) => {
+        
+    //     if (favorites.find(item => item.id === obj.id)) {
+    //         axios.delete(`https://642b102500dfa3b54756026c.mockapi.io/favorites/${obj.id}`)
+    //         setFavorites(prev => prev.filter(item => item.id !== obj.id))      
+    //     } else {
+    //         axios.post(`https://642b102500dfa3b54756026c.mockapi.io/favorites`, obj)
+    //         setFavorites(prev => [...prev, obj])    
+    //     }
+    // }
     
     return (
         <Provider value={{
@@ -92,7 +133,9 @@ function App() {
                 removeItemFromCart, 
                 favorites,
                 setFavorites,
-                onClickFavorite
+                addFaforite,
+                setActivePages,
+                activePages,
                 }}>
             <Router>
                 <div className="wrapper">

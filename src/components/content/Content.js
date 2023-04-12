@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState, useContext } from 'react'
 
 import Cards from '../cards/Cards'
@@ -10,7 +10,7 @@ import './content.scss'
 
 const Content = () => {
     const [inputValue, setInputValue] = useState('')
-    const {data, isLoading, addItemFromCart} = useContext(dataContext)
+    const {data, isLoading, setActivePages, activePages} = useContext(dataContext)
 
     const renderItems = () => (
         data.filter(el => el.title.toLowerCase().includes(inputValue.toLowerCase()))
@@ -26,6 +26,20 @@ const Content = () => {
                 )
             })
     )
+
+    const renderPaginations = () => {
+        const res = [...Array(4)].map((item, i) => {
+            const clazz = i + 1 === activePages ? 'active' : ''
+            return (
+                <div
+                    key={i}
+                    onClick={() => setActivePages(i + 1)}
+                    className={`page ${clazz}`}>{i + 1}</div>
+            )
+        })
+
+        return res
+    }
 
     return (
         <div className="content">
@@ -43,6 +57,10 @@ const Content = () => {
             <div className="cards">
                 {isLoading ? <Skeleton/> : renderItems()}
             </div>    
+            <div className="content_pages">
+                {renderPaginations()}
+                {/* <div className="page active">1</div> */}
+            </div>
         </div>
     )
 }
