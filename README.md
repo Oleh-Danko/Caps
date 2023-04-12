@@ -1,7 +1,7 @@
 # Web applications in React js
 ## Online store Caps
 
-**🌿 The project usess:
+** The project usess:
 
     *Hooks
     *Create your own hook
