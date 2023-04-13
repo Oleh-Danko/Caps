@@ -59,7 +59,7 @@ function App() {
         try {
             const url = 'https://640f4968cde47f68db46c131.mockapi.io/Cart'
         
-            if (itemCart.find(el => +el.parentId === +obj.id)) {
+            if (itemCart.find(el => +el.parentId === +obj.parentId)) {
                 removeItemFromCart(obj) 
             } else {
                 setItemCart(prev => [...prev, obj]) 
@@ -84,13 +84,8 @@ function App() {
             const url = 'https://642b102500dfa3b54756026c.mockapi.io/favorites'
 
             if (favorites.find(el => +el.parentId === +obj.parentId)) {
-                console.log(obj)
-                console.log(favorites)
                 removeFavorites(obj, url) 
             } else {
-                console.log(obj)
-                console.log(favorites)
-
                 setFavorites(prev => [...prev, obj]) 
                 const {data} = await  axios.post(url, obj)  
                 setFavorites(prev => prev.map(el => {

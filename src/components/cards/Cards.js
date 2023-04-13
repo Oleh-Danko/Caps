@@ -6,13 +6,7 @@ import './cards.scss'
 
 const Cards = ({title, price, img, id, parentId, dontShowbtn, isFavorit}) => {
     const { addFaforite, itemCart, favorites, addItemFromCart } = useContext(dataContext)
-    // const obj = {title, price, img, id, parentId: id}
     const obj = {title, price, img, id, parentId}
-
-    const onClickFavorite = () => {
-        addFaforite(obj)
-    }
-    console.log(isFavorit)
 
     return (
         <div className="card">
@@ -20,7 +14,7 @@ const Cards = ({title, price, img, id, parentId, dontShowbtn, isFavorit}) => {
                 {dontShowbtn ? null : <img 
                     src={favorites && favorites.some(el => +el.parentId === +id) || isFavorit ? '/img/heart-licked.svg'  : '/img/heart-unlicked.svg'} 
                     alt={favorites && favorites.some(el => +el.id === +id) ? "licked" : "unlicked"}
-                    onClick={onClickFavorite} />}        
+                    onClick={() => addFaforite(obj)} />}        
             </div>
             <div className="card_img">
                 <img src={img} alt="card photo" />
@@ -35,7 +29,7 @@ const Cards = ({title, price, img, id, parentId, dontShowbtn, isFavorit}) => {
                 </div>
                 {dontShowbtn ? null : <img 
                     onClick={() => addItemFromCart(obj)}
-                    src={itemCart.some(el => +el.parentId === +id) ? "/img/btn-checked.svg" : "/img/btn-plus.svg"}
+                    src={itemCart.some(el => +el.parentId === +parentId) ? "/img/btn-checked.svg" : "/img/btn-plus.svg"}
                     alt="plus" />}
             </div>  
         </div>

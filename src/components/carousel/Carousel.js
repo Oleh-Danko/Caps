@@ -17,7 +17,6 @@ const Carousel = () => {
     const handleSlide = useCallback((slide) => {
         const width = 960
         const slidersLength = (-(dataSlider.length - 1 ) * width)
-        console.log(offset, slidersLength)
 
         if (slide === 'left') {
             offset <= slidersLength ? setOffset(0) : setOffset(prev => prev - width)  
